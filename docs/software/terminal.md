@@ -40,6 +40,44 @@ https://github.com/tmux/tmux
 sudo pacman -S tmux
 ```
 
+## nohup
+
+后台运行命令，关掉终端也不中断：
+
+```
+nohup command &
+```
+
+用 `jobs` 可以查看后台执行的任务。
+
+## screen
+
+启动新的 `screen` 会话：
+
+```
+screen -S 会话名
+```
+
+恢复会话（也可以用 ID）：
+
+```
+screen -r 会话名
+```
+
+查看所有会话：
+
+```
+screen -ls
+```
+
+常用快捷键：
+
+- `Ctrl-a` + `d`：暂时分离当前会话，返回命令行
+- `Ctrl-a` + `c`：创建一个新窗口
+- `Ctrl-a` + `n`：切换到下一个窗口
+- `Ctrl-a` + `p`：切换到前一个窗口
+- `Ctrl-a` + `0..9`：切换到指定编号的窗口
+
 ## Zsh
 
 https://www.zsh.org/
@@ -83,5 +121,21 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+```
+
+## 历史记录
+
+清除当前 shell 会话的历史记录：
+
+```
+history -c
+```
+
+永久禁用历史记录，添加到 `~/.bashrc` 并 `source ~/.bashrc`：
+
+```
+unset HISTFILE
+HISTSIZE=0
+HISTFILESIZE=0
 ```
 

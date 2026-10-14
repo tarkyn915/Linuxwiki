@@ -18,7 +18,8 @@ export default defineConfig({
       { text: '安装指南', link: '/installation/' },
       { text: '系统配置', link: '/system-config/' },
       { text: '软件安装和配置', link: '/software/' },
-      { text: '故障排查', link: '/troubleshooting/' },
+      { text: '脚本', link: '/scripts/' },
+      { text: '其他', link: '/other/' },
     ],
 
     sidebar: [
@@ -27,6 +28,10 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: '章节概览', link: '/installation/' },
+          { text: 'Debian', link: '/installation/debian' },
+          { text: 'Ubuntu', link: '/installation/ubuntu' },
+          { text: 'Rocky Linux', link: '/installation/rocky' },
+          { text: 'Arch Linux', link: '/installation/arch' },
         ],
       },
       {
@@ -34,8 +39,13 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: '章节概览', link: '/system-config/' },
+          { text: '主机名', link: '/system-config/hostname' },
+          { text: '软件源', link: '/system-config/repo' },
           { text: '用户和用户组', link: '/system-config/users' },
           { text: 'SSH 配置', link: '/system-config/ssh' },
+          { text: 'DNS 配置', link: '/system-config/dns' },
+          { text: '禁止 ping', link: '/system-config/ping' },
+          { text: 'swap 交换内存', link: '/system-config/swap' },
           { text: 'BBR 拥塞控制', link: '/system-config/bbr' },
         ],
       },
@@ -56,10 +66,22 @@ export default defineConfig({
         ],
       },
       {
-        text: '故障排查',
+        text: '脚本',
         collapsed: true,
         items: [
-          { text: '章节概览', link: '/troubleshooting/' },
+          { text: '章节概览', link: '/scripts/' },
+          { text: '性能测试', link: '/scripts/performance' },
+          { text: '路由测试', link: '/scripts/route' },
+          { text: 'Warp', link: '/scripts/warp' },
+          { text: 'DD 系统', link: '/scripts/dd' },
+        ],
+      },
+      {
+        text: '其他',
+        collapsed: true,
+        items: [
+          { text: '章节概览', link: '/other/' },
+          { text: '终端查询天气预报', link: '/other/weather' },
         ],
       },
     ],

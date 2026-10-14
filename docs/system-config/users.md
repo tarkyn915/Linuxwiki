@@ -75,3 +75,19 @@ usermod -aG group1,group2 username
 ```
 
 > `-a` 表示追加（append），`-G` 指定附加组。不加 `-a` 会覆盖用户原来的附加组，务必带上 `-a`。
+
+## sudo 权限
+
+配置文件在 `/etc/sudoers`（用 `visudo` 编辑，会检查语法）。
+
+方式一：把用户加到 sudo 组（推荐，方便维护）：
+
+```
+usermod -aG wheel 用户名
+```
+
+方式二：直接给单个用户加 sudo 权限：
+
+```
+xxx ALL=(ALL:ALL) ALL
+```

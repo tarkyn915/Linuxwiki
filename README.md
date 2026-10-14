@@ -1,4 +1,4 @@
-# Linux 百宝箱
+# My Linux Wiki
 
 基于 [VitePress](https://vitepress.dev/) 的个人 Linux 知识库，记录我折腾 Linux 时遇到的问题、经验和常用配置，打开网页就能查方法。
 
@@ -26,10 +26,11 @@ wiki/
     ├── index.md          # 首页
     ├── .vitepress/
     │   └── config.mts    # 站点配置：标题、顶部导航、侧边栏
-    ├── installation/     # 安装指南
-    ├── system-config/    # 系统配置（用户、SSH、BBR 等）
+    ├── installation/     # 安装指南（各发行版官网与版本）
+    ├── system-config/    # 系统配置（主机名、软件源、用户、SSH、swap、BBR 等）
     ├── software/         # 软件（浏览器、播放器、终端、编辑器等）
-    └── troubleshooting/  # 故障排查
+    ├── scripts/          # 脚本（性能测试、路由测试、DD 系统等）
+    └── other/            # 其他零碎内容
 ```
 
 ## 如何新增 / 修改内容
