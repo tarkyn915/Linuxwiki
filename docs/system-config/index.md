@@ -2,9 +2,6 @@
 
 ---
 
-- [Pacman](pacman.md) — 包管理器常用命令
-- [镜像源](mirror.md) — 清华 Arch 源、archlinuxcn 仓库与密钥导入
-- [AUR](aur.md) — AUR 助手（yay / paru）安装与使用
-- [Systemd](systemd.md) — 服务管理、日志查看、开机自启
-- [DNS](dns.md) — DNS 配置与解析排错
-- [用户管理](users.md) — 用户创建、权限与 sudo 配置
+- [用户和用户组](users.md) — 用户创建、修改、分组管理
+- [SSH 配置](ssh.md) — 密钥登录、sshd_config 配置
+- [BBR 拥塞控制](bbr.md) — 服务器 TCP 加速（丢包高延迟机器效果显著）

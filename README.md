@@ -1,8 +1,8 @@
-# Arch Linux Wiki
+# Linux 百宝箱
 
-基于 [VitePress](https://vitepress.dev/) 的个人Arch知识库，记录我自己折腾过的 Arch Linux
+基于 [VitePress](https://vitepress.dev/) 的个人 Linux 知识库，记录我折腾 Linux 时遇到的问题、经验和常用配置，打开网页就能查方法。
 
-##  环境要求
+## 环境要求
 
 - Node.js ≥ 22.13（pnpm 要求）
 - [pnpm](https://pnpm.io/) 包管理器
@@ -27,8 +27,8 @@ wiki/
     ├── .vitepress/
     │   └── config.mts    # 站点配置：标题、顶部导航、侧边栏
     ├── installation/     # 安装指南
-    ├── system-config/    # 系统配置（Pacman、镜像源、AUR…）
-    ├── software/         # 软件安装（浏览器、播放器、代理工具…）
+    ├── system-config/    # 系统配置（用户、SSH、BBR 等）
+    ├── software/         # 软件（浏览器、播放器、终端、编辑器等）
     └── troubleshooting/  # 故障排查
 ```
 
@@ -46,4 +46,3 @@ wiki/
 4. **改首页**：编辑 `docs/index.md`。
 
 > 改文件夹名时，要同步改 `config.mts` 的 `nav`、`sidebar`、首页 `index.md` 的 features 三处 `link`，否则会 404。
-

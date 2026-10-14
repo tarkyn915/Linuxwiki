@@ -24,35 +24,29 @@ export default defineConfig({
     sidebar: [
       {
         text: '安装指南',
-        collapsed: false,
+        collapsed: true,
         items: [
           { text: '章节概览', link: '/installation/' },
-          { text: '安装准备', link: '/installation/preparation' },
-          { text: '磁盘分区', link: '/installation/partitioning' },
-          { text: '网络配置', link: '/installation/network' },
-          { text: '引导安装', link: '/installation/bootloader' },
         ],
       },
       {
         text: '系统配置',
-        collapsed: false,
+        collapsed: true,
         items: [
           { text: '章节概览', link: '/system-config/' },
-            { text: 'Pacman', link: '/system-config/pacman' },
-            { text: '镜像源', link: '/system-config/mirror' },
-            { text: 'AUR', link: '/system-config/aur' },
-          { text: 'Systemd', link: '/system-config/systemd' },
-          { text: 'DNS', link: '/system-config/dns' },
-          { text: '用户管理', link: '/system-config/users' },
+          { text: '用户和用户组', link: '/system-config/users' },
+          { text: 'SSH 配置', link: '/system-config/ssh' },
+          { text: 'BBR 拥塞控制', link: '/system-config/bbr' },
         ],
       },
       {
         text: '软件安装和配置',
-        collapsed: false,
+        collapsed: true,
         items: [
           { text: '章节概览', link: '/software/' },
           { text: '浏览器', link: '/software/browser' },
           { text: '音乐播放器', link: '/software/music' },
+          { text: '视频播放器', link: '/software/video' },
           { text: '输入法', link: '/software/input-method' },
           { text: '字体', link: '/software/fonts' },
           { text: '终端', link: '/software/terminal' },
@@ -63,12 +57,9 @@ export default defineConfig({
       },
       {
         text: '故障排查',
-        collapsed: false,
+        collapsed: true,
         items: [
           { text: '章节概览', link: '/troubleshooting/' },
-          { text: '错误信息', link: '/troubleshooting/errors' },
-          { text: '解决方法', link: '/troubleshooting/solutions' },
-          { text: '配置备份', link: '/troubleshooting/backup' },
         ],
       },
     ],

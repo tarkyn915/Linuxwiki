@@ -3,7 +3,8 @@
 ---
 
 - [浏览器](browser.md) — Chrome、Firefox、Zen、Floorp、Brave 等
-- [音乐播放器](music.md) — Feishin、Tsukimi、Spotify、网易云、VLC、MPV
+- [音乐播放器](music.md) — Feishin、Spotify、网易云
+- [视频播放器](video.md) — Tsukimi、VLC、MPV、Celluloid
 - [输入法](input-method.md) — Fcitx 5、IBus、Rime
 - [字体](fonts.md) — Noto CJK、文泉驿、Nerd Fonts
 - [终端](terminal.md) — Alacritty、Kitty、WezTerm、tmux、Zsh、Starship

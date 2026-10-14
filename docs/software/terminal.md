@@ -65,3 +65,23 @@ https://github.com/starship/starship
 ```
 sudo pacman -S starship
 ```
+
+## Shell 补全（bash-completion）
+
+安装 `bash-completion` 包即可，大部分场景会自动生效，无需手动配置。
+
+安装后，多数包管理器会在 `/etc/profile.d/` 里创建自动加载脚本；若未自动生效，再手动编辑 `~/.bashrc` 并重载 `source ~/.bashrc`。
+
+手动加载的写法（仅在自动加载失效时用）：
+
+```
+# enable bash completion in interactive shells
+if ! shopt -oq posix; then
+  if [ -f /usr/share/bash-completion/bash_completion ]; then
+    . /usr/share/bash-completion/bash_completion
+  elif [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion
+  fi
+fi
+```
+

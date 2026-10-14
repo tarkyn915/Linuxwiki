@@ -1,30 +1,77 @@
-# 用户管理
+# 用户和用户组
 
-> 本页为模板占位页，请按下方结构补充内容。
+Linux 用户相关的信息分散在几个文件里：
 
-## 概述
-
-<!-- 一句话说明本页主题是什么、解决什么问题 -->
-
-待补充。
-
-## 操作步骤
-
-1. 待补充
-2. 待补充
-
-## 配置示例
-
-```bash
-# 待补充
+```
+/etc/passwd    用户及其属性信息
+/etc/shadow    用户密码及其相关属性
+/etc/group     组及其属性信息
+/etc/gshadow   组密码及其相关属性
 ```
 
-## 常见问题
+## 用户
 
-| 问题 | 解决方法 |
-| ---- | -------- |
-| 待补充 | 待补充 |
+### 创建用户
 
-## 参考资料
+```
+useradd -m -s /usr/bin/bash xnamex
+```
 
-- [Arch Wiki](https://wiki.archlinux.org/)
+`-m` 自动创建家目录，`-s` 指定登录 shell。
+
+删除用户（`-r` 连同家目录一起删）：
+
+```
+userdel username -r
+```
+
+### 修改用户信息
+
+改用户名：
+
+```
+usermod -l newname oldname
+```
+
+迁移家目录到新位置（`-m` 会移动现有文件）：
+
+```
+usermod -d /new/home -m username
+```
+
+锁定 / 解锁用户（锁定后无法登录）：
+
+```
+usermod -L username
+usermod -U username
+```
+
+## 用户组
+
+### 创建组
+
+```
+groupadd groupname
+```
+
+修改用户组属性：
+
+```
+groupmod groupname
+```
+
+删除用户组：
+
+```
+groupdel groupname
+```
+
+### 把用户加入组
+
+追加到附加组（多个组用逗号分隔）：
+
+```
+usermod -aG group1,group2 username
+```
+
+> `-a` 表示追加（append），`-G` 指定附加组。不加 `-a` 会覆盖用户原来的附加组，务必带上 `-a`。
