@@ -62,6 +62,11 @@ export default defineConfig({
           { text: 'Nginx UI', link: '/deploy/nginx-ui' },
           { text: 'Nginx Proxy Manager', link: '/deploy/nginx-proxy-manager' },
           { text: 'FRP 内网穿透', link: '/deploy/frp' },
+          { text: 'Realm 端口转发', link: '/deploy/realm' },
+          { text: 'ddns-go 动态域名', link: '/deploy/ddns-go' },
+          { text: 'Sub2api', link: '/deploy/sub2api' },
+          { text: 'Uptime Kuma', link: '/deploy/uptime-kuma' },
+          { text: 'TeamSpeak', link: '/deploy/teamspeak' },
         ],
       },
       {
@@ -81,6 +86,7 @@ export default defineConfig({
         items: [
           { text: '章节概览', link: '/other/' },
           { text: '终端查询天气预报', link: '/other/weather' },
+          { text: '监控测试 IP', link: '/other/monitor-ip' },
         ],
       },
     ],
