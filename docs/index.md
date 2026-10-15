@@ -21,10 +21,10 @@ features:
     details: 主机名、用户、SSH、DNS、swap、BBR
     link: /system-config/
     linkText: 进入章节
-  - icon: 📦
-    title: 软件安装和配置
-    details: 浏览器、播放器、终端、编辑器、代理工具
-    link: /software/
+  - icon: 🚀
+    title: 应用部署
+    details: Docker、Nginx、FRP、监控、云盘等自托管应用
+    link: /deploy/
     linkText: 进入章节
   - icon: 🐞
     title: 脚本
