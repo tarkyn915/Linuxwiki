@@ -14,3 +14,5 @@
 - [Sub2api](sub2api.md) — 网页订阅转 API
 - [Uptime Kuma](uptime-kuma.md) — 自托管服务监控
 - [TeamSpeak](teamspeak.md) — 自托管语音服务器
+- [Navidrome](navidrome.md) — 自托管音乐服务器
+- [Calibre-Web](calibre-web.md) — 电子书管理 Web 界面

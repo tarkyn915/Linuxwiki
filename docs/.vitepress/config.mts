@@ -67,6 +67,8 @@ export default defineConfig({
           { text: 'Sub2api', link: '/deploy/sub2api' },
           { text: 'Uptime Kuma', link: '/deploy/uptime-kuma' },
           { text: 'TeamSpeak', link: '/deploy/teamspeak' },
+          { text: 'Navidrome', link: '/deploy/navidrome' },
+          { text: 'Calibre-Web', link: '/deploy/calibre-web' },
         ],
       },
       {
