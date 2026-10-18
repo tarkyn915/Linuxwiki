@@ -22,6 +22,28 @@ pnpm docs:preview   # 本地预览构建产物
 pnpm run docs:dev --host 0.0.0.0
 ```
 
+## 换设备恢复
+
+换机器后，从 GitHub 拉取并重建本地环境：
+
+```bash
+# 1. 克隆仓库
+git clone https://github.com/tarkyn915/Linuxwiki.git
+cd Linuxwiki
+
+# 2. 安装依赖（需 Node.js ≥ 22.13，pnpm 要求）
+pnpm install
+
+# 3. 启动开发服务器
+pnpm docs:dev
+```
+
+说明：
+
+- 仓库已包含 `pnpm-lock.yaml`，`pnpm install` 会按锁文件还原一致的依赖版本。
+- `node_modules/` 和 `docs/.vitepress/cache/` 已在 `.gitignore` 里排除，换设备后无需手动清理，`pnpm install` 会重新生成。
+- 若当前机器没有 pnpm，先用 `corepack enable`（或 `npm i -g pnpm`）安装。
+
 ## 目录结构
 
 ```
