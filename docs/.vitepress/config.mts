@@ -79,6 +79,9 @@ export default defineConfig({
           { text: 'OpenList', link: '/deploy/openlist' },
           { text: 'Cloudreve', link: '/deploy/cloudreve' },
           { text: 'ArchiSteamFarm', link: '/deploy/asf' },
+          { text: 'Netdata', link: '/deploy/netdata' },
+          { text: 'Prometheus + Grafana', link: '/deploy/prometheus-grafana' },
+          { text: '夜莺 Nightingale', link: '/deploy/nightingale' },
         ],
       },
       {

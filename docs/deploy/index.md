@@ -25,3 +25,6 @@
 - [OpenList](openlist.md) — 网盘聚合（AList 分支）
 - [Cloudreve](cloudreve.md) — 私有云盘
 - [ArchiSteamFarm](asf.md) — Steam 挂机工具
+- [Netdata](netdata.md) — 实时服务器监控
+- [Prometheus + Grafana](prometheus-grafana.md) — 指标采集与可视化
+- [夜莺 Nightingale](nightingale.md) — 监控告警中心

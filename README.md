@@ -16,6 +16,12 @@ pnpm docs:build     # 构建静态站点，输出到 docs/.vitepress/dist
 pnpm docs:preview   # 本地预览构建产物
 ```
 
+局域网访问开发服务器（监听所有网卡，其他设备可通过本机 IP 访问）：
+
+```bash
+pnpm run docs:dev --host 0.0.0.0
+```
+
 ## 目录结构
 
 ```
