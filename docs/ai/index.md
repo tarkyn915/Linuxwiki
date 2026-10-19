@@ -4,4 +4,4 @@
 
 ---
 
-- [Hermes](hermes.md) — 个人技能与长期记忆管理、GitHub 同步、换设备恢复与 Curator
+- [Hermes](hermes.md) — 当前配置、新设备安装、技能与记忆同步、开始使用
