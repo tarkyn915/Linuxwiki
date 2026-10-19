@@ -10,7 +10,7 @@
 | 长期记忆 | `~/.hermes/memories/` 中的 `MEMORY.md`、`USER.md` 链接到仓库的 `memories/` |
 | 同步方式 | 技能和记忆一起通过 Git 提交、推送、拉取；也可以让 AI 帮忙操作 |
 
-CachyOS 这台电脑已配置好，无需重复接入。现有技能是 `vitepress-deploy`、`vitepress-vps-deploy`、`stow-dotfiles`；记忆更新直接保存到仓库文件，无需手动复制。
+CachyOS 这台电脑已配置好，无需重复接入。现有技能是 `vitepress-deploy`（本地部署、VPS 自动部署和 wiki 维护）、`stow-dotfiles`；记忆更新直接保存到仓库文件，无需手动复制。
 
 ## 1. 新设备安装并初始化 Hermes
 
@@ -61,7 +61,7 @@ hermes
 
 可以先说：
 
-> 检查我的三个自建技能能否加载，并确认长期记忆里是否有我的 wiki 项目地址。
+> 检查我的自建技能能否加载，并确认长期记忆里是否有我的 wiki 项目地址。
 
 之后按平时的方式使用，例如“帮我更新 wiki”“把这次操作的经验补充到技能里”。日常同步也可以直接交给 AI：
 
