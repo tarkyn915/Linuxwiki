@@ -28,7 +28,7 @@ features:
     linkText: 进入章节
   - icon: 🤖
     title: AI
-    details: AI 部署、配置与本地工作流
+    details: Hermes 技能同步、AI 部署与本地工作流
     link: /ai/
     linkText: 进入章节
   - icon: 🧩

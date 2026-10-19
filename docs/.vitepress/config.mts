@@ -89,6 +89,7 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: '章节概览', link: '/ai/' },
+          { text: 'Hermes', link: '/ai/hermes' },
         ],
       },
       {
