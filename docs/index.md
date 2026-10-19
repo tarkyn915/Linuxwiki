@@ -26,14 +26,14 @@ features:
     details: Docker、Nginx、FRP、监控、云盘等自托管应用
     link: /deploy/
     linkText: 进入章节
-  - icon: 🐞
-    title: 脚本
-    details: 性能测试、路由测试、DD 系统等常用脚本
-    link: /scripts/
+  - icon: 🤖
+    title: AI
+    details: AI 部署、配置与本地工作流
+    link: /ai/
     linkText: 进入章节
   - icon: 🧩
     title: 其他
-    details: 零碎小工具、命令
+    details: 常用脚本、零碎小工具与命令
     link: /other/
     linkText: 进入章节
 ---

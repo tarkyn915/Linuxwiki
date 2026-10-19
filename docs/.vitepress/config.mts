@@ -18,7 +18,7 @@ export default defineConfig({
       { text: '安装指南', link: '/installation/' },
       { text: '系统配置', link: '/system-config/' },
       { text: '应用部署', link: '/deploy/' },
-      { text: '脚本', link: '/scripts/' },
+      { text: 'AI', link: '/ai/' },
       { text: '其他', link: '/other/' },
     ],
 
@@ -85,14 +85,10 @@ export default defineConfig({
         ],
       },
       {
-        text: '脚本',
+        text: 'AI',
         collapsed: true,
         items: [
-          { text: '章节概览', link: '/scripts/' },
-          { text: '性能测试', link: '/scripts/performance' },
-          { text: '路由测试', link: '/scripts/route' },
-          { text: 'Warp', link: '/scripts/warp' },
-          { text: 'DD 系统', link: '/scripts/dd' },
+          { text: '章节概览', link: '/ai/' },
         ],
       },
       {
@@ -100,6 +96,7 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: '章节概览', link: '/other/' },
+          { text: '常用脚本', link: '/other/scripts' },
           { text: '终端查询天气预报', link: '/other/weather' },
           { text: '监控测试 IP', link: '/other/monitor-ip' },
         ],

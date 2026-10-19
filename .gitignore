@@ -4,6 +4,9 @@ node_modules/
 # 缓存
 docs/.vitepress/cache/
 
+# 构建产物（由 GitHub Actions 构建后 rsync 到 VPS，不提交）
+docs/.vitepress/dist/
+
 # 系统与编辑器
 .DS_Store
 Thumbs.db
