@@ -113,7 +113,10 @@ wiki/
     ├── deploy/           # 应用部署（Docker、Nginx、FRP、监控、云盘等自托管应用）
     ├── ai/               # AI 工具与部署配置
     │   ├── index.md      # AI 章节概览
-    │   └── hermes.md     # Hermes 技能同步、迁移与维护
+    │   ├── hermes.md     # Hermes 技能同步、迁移与维护
+    │   ├── herdr.md      # Herdr 多 AI 终端管理、远程连接与会话恢复
+    │   ├── opencode.md   # OpenCode AI 编程助手、模型连接与自定义 API
+    │   └── magpie.md     # magpie 模型网关、AUR 与官方脚本安装
     └── other/            # 其他零碎内容（常用脚本、小工具、命令）
 ```
 

@@ -5,6 +5,7 @@ export default defineConfig({
   title: 'my wiki',
   description: '我的个人wiki',
   lang: 'zh-CN',
+  appearance: 'dark',
 
   // 让文档里直接写的裸网址（如 https://...）自动变成可点击链接
   markdown: {
@@ -90,6 +91,9 @@ export default defineConfig({
         items: [
           { text: '章节概览', link: '/ai/' },
           { text: 'Hermes', link: '/ai/hermes' },
+          { text: 'Herdr AI 多终端管理', link: '/ai/herdr' },
+          { text: 'OpenCode AI 编程助手', link: '/ai/opencode' },
+          { text: 'magpie 模型网关', link: '/ai/magpie' },
         ],
       },
       {
