@@ -1,0 +1,17 @@
+# 统一换行符：所有文本文件在仓库和工作区都用 LF
+# 这样 Windows / Linux 交叉编辑不会出现"整篇文件都改了"的 diff
+* text=auto eol=lf
+
+# 常见的二进制文件，明确不做换行符转换
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.webp binary
+*.svg text
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.zip binary
+*.pdf binary
