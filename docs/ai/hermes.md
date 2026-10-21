@@ -30,26 +30,16 @@ hermes setup
 
 ## 2. 同步我的技能和记忆
 
-先在普通终端登录有私有仓库权限的 GitHub 账号：
+先装好 GitHub CLI 并在普通终端登录一次有私有仓库权限的账号：
 
 ```bash
-gh auth login
-gh auth setup-git
+sudo pacman -S github-cli    # Arch/CachyOS；其他系统用各自的包管理器
+gh auth login                # 浏览器登录一次
 ```
 
-**接下来可以直接打开 Hermes，让 AI 帮忙完成：**
+**然后打开 Hermes，直接把下面这句发给 AI：**
 
-> 帮我接入私有仓库 tarkyn915/hermes-skills，克隆到 ~/hermes-skills，设置默认 profile 的技能目录，并用仓库里的 scripts/link-memory.py 接入长期记忆。已有克隆先检查并拉取；已有不同记忆先比较合并，保留本机重要内容。完成后检查技能和记忆是否接入成功。
-
-也可以先关闭 Hermes 会话，在普通终端手动执行：
-
-```bash
-gh repo clone tarkyn915/hermes-skills ~/hermes-skills
-hermes config set skills.create_dir '~/hermes-skills'
-python3 ~/hermes-skills/scripts/link-memory.py --hermes-home ~/.hermes
-```
-
-已有 `~/hermes-skills` 就不用再克隆，检查并保存本地修改后执行 `git -C ~/hermes-skills pull --ff-only`，再配置和接入即可。
+> 帮我接入私有仓库 tarkyn915/hermes-skills，完成技能和记忆的接入，不同记忆合并并保留重要内容，然后自己检查。
 
 ## 3. 开始使用
 
