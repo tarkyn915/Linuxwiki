@@ -117,6 +117,7 @@ wiki/
     │   ├── herdr.md      # Herdr 多 AI 终端管理、远程连接与会话恢复
     │   ├── opencode.md   # OpenCode AI 编程助手、模型连接与自定义 API
     │   └── magpie.md     # magpie 模型网关、AUR 与官方脚本安装
+    ├── windows/          # Windows 装机与优化（激活、OOBE、本地账户、系统优化）
     └── other/            # 其他零碎内容（常用脚本、小工具、命令）
 ```
 

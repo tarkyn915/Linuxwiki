@@ -17,6 +17,7 @@
 - [哪吒监控](nezha.md) — 服务器监控与运维平台
 - [SmokePing](smokeping.md) — 网络延迟监控
 - [Fast Note Sync](fast-note-sync.md) — 笔记同步服务
+- [Memos](memos.md) — 自托管碎片笔记
 - [TeamSpeak](teamspeak.md) — 自托管语音服务器
 - [Navidrome](navidrome.md) — 自托管音乐服务器
 - [Calibre-Web](calibre-web.md) — 电子书管理 Web 界面

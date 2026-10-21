@@ -20,6 +20,7 @@ export default defineConfig({
       { text: '系统配置', link: '/system-config/' },
       { text: '应用部署', link: '/deploy/' },
       { text: 'AI', link: '/ai/' },
+      { text: 'Windows', link: '/windows/' },
       { text: '其他', link: '/other/' },
     ],
 
@@ -72,6 +73,7 @@ export default defineConfig({
           { text: '哪吒监控', link: '/deploy/nezha' },
           { text: 'SmokePing', link: '/deploy/smokeping' },
           { text: 'Fast Note Sync', link: '/deploy/fast-note-sync' },
+          { text: 'Memos 碎片笔记', link: '/deploy/memos' },
           { text: 'TeamSpeak', link: '/deploy/teamspeak' },
           { text: 'Navidrome', link: '/deploy/navidrome' },
           { text: 'Calibre-Web', link: '/deploy/calibre-web' },
@@ -94,6 +96,16 @@ export default defineConfig({
           { text: 'Herdr AI 多终端管理', link: '/ai/herdr' },
           { text: 'OpenCode AI 编程助手', link: '/ai/opencode' },
           { text: 'magpie 模型网关', link: '/ai/magpie' },
+        ],
+      },
+      {
+        text: 'Windows',
+        collapsed: true,
+        items: [
+          { text: '章节概览', link: '/windows/' },
+          { text: '激活', link: '/windows/activation' },
+          { text: '安装与本地账户', link: '/windows/install' },
+          { text: '系统优化', link: '/windows/optimize' },
         ],
       },
       {

@@ -31,6 +31,11 @@ features:
     details: Hermes 技能同步、Herdr 终端管理、OpenCode 与 magpie
     link: /ai/
     linkText: 进入章节
+  - icon: 🪟
+    title: Windows
+    details: 激活、跳过联网安装、本地账户、系统优化
+    link: /windows/
+    linkText: 进入章节
   - icon: 🧩
     title: 其他
     details: 常用脚本、零碎小工具与命令
