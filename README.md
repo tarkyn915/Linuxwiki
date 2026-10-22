@@ -110,7 +110,7 @@ wiki/
     │   └── config.mts    # 站点配置：标题、顶部导航、侧边栏
     ├── installation/     # 安装指南（各发行版官网与版本）
     ├── system-config/    # 系统配置（主机名、软件源、用户、SSH、swap、BBR 等）
-    ├── deploy/           # 应用部署（Docker、Nginx、FRP、监控、云盘等自托管应用）
+    ├── deploy/           # 应用部署（Docker、Nginx、FRP、监控、云盘、ERP 等自托管应用）
     ├── ai/               # AI 工具与部署配置
     │   ├── index.md      # AI 章节概览
     │   ├── hermes.md     # Hermes 技能同步、迁移与维护
