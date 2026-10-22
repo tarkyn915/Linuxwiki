@@ -7,6 +7,10 @@ export default defineConfig({
   lang: 'zh-CN',
   appearance: 'dark',
 
+  head: [
+    ['link', { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+  ],
+
   // 让文档里直接写的裸网址（如 https://...）自动变成可点击链接
   markdown: {
     linkify: true,
