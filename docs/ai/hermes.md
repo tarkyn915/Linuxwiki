@@ -1,16 +1,24 @@
 # Hermes
 
+桌面客户端：[官方安装文档](https://hermes-agent.nousresearch.com/)
+
 ## 当前配置
 
 | 项目 | 配置 |
 | --- | --- |
-| 私有仓库 | [tarkyn915/hermes-skills](https://github.com/tarkyn915/hermes-skills) |
-| 本地目录 | `~/hermes-skills` |
 | 技能目录 | `skills.create_dir: ~/hermes-skills` |
 | 长期记忆 | `~/.hermes/memories/` 中的 `MEMORY.md`、`USER.md` 链接到仓库的 `memories/` |
-| 同步方式 | 技能和记忆一起通过 Git 提交、推送、拉取；也可以让 AI 帮忙操作 |
 
-CachyOS 这台电脑已配置好，无需重复接入。现有技能是 `vitepress-deploy`（本地部署、VPS 自动部署和 wiki 维护）、`stow-dotfiles`；记忆更新直接保存到仓库文件，无需手动复制。
+## 常用命令
+
+```bash
+hermes                # 交互对话
+hermes --tui          # 终端界面
+hermes chat -q "问题"  # 单次提问
+hermes skills list    # 查看已加载的技能
+hermes model          # 切换模型和供应商
+hermes doctor         # 健康检查
+```
 
 ## 1. 新设备安装并初始化 Hermes
 
@@ -28,61 +36,25 @@ hermes setup
 
 按提示配置这台设备的模型和授权，确认运行 `hermes` 后可以正常对话。
 
-## 2. 同步我的技能和记忆
+## 2. 配置好自定义的 API
 
-先装好 GitHub CLI 并在普通终端登录一次有私有仓库权限的账号：
+安装时跳过了模型配置，或者想换供应商，直接运行：
+
+```bash
+hermes model
+```
+
+按提示选供应商和模型，填入对应的 API 密钥
+
+## 3. 同步我的技能和记忆
+
+先装好 GitHub CLI，在普通终端登录一次有私有仓库权限的账号；也可以不自己装，直接把下面那句发给 AI，让它自己装好 GitHub CLI 并带你登录：
 
 ```bash
 sudo pacman -S github-cli    # Arch/CachyOS；其他系统用各自的包管理器
 gh auth login                # 浏览器登录一次
 ```
 
-Windows 上用 `winget install Git.Git GitHub.cli` 装 Git 和 gh，接入命令见下一节
-
 **然后打开 Hermes，直接把下面这句发给 AI：**
 
 > 帮我接入私有仓库 tarkyn915/hermes-skills，完成技能和记忆的接入，不同记忆合并并保留重要内容，然后自己检查。
-
-## 3. Windows 11 桌面客户端
-
-桌面版有两种后端，接入方式不同
-
-**本机后端（原生 Windows）**：数据目录是 `%LOCALAPPDATA%\hermes`，装好 Git 和 gh 后跑 PowerShell 脚本
-
-```powershell
-winget install Git.Git GitHub.cli
-gh auth login
-gh repo clone tarkyn915/hermes-skills "$HOME\hermes-skills"
-powershell -ExecutionPolicy Bypass -File "$HOME\hermes-skills\scripts\setup-machine.ps1"
-```
-
-记忆用 NTFS 硬链接接入，所以仓库和 Hermes 数据目录要在同一个磁盘分区；发文章只需要 Git + gh，构建和部署由 GitHub Actions 完成，本地没有 systemd，预览用 `pnpm docs:dev`
-
-**WSL2 后端**：`wsl --install` 装好 Ubuntu，在 WSL 里按上面的 Linux 步骤跑 `setup-machine.sh`，桌面版首次启动选 Connect to existing Hermes 连到 WSL 的后端，这样 systemd 用户服务和 `~/.ssh` 都能照搬
-
-## 4. 开始使用
-
-接入完成后，退出并重新打开 Hermes，让它读入同步后的长期记忆：
-
-```bash
-hermes
-```
-
-可以先说：
-
-> 检查我的自建技能能否加载，并确认长期记忆里是否有我的 wiki 项目地址。
-
-之后按平时的方式使用，例如“帮我更新 wiki”“把这次操作的经验补充到技能里”。日常同步也可以直接交给 AI：
-
-- 使用另一台设备前：“检查并拉取我的技能和记忆仓库，保留本地修改。”拉取完成后新开会话。
-- 技能或记忆更新后：“检查我的技能和记忆仓库修改，提交并推送到 GitHub。”
-
-## 几个小细节
-
-- **本地保存自动，Git 同步需要操作。** 当前没有自动上传、下载；可以自己执行，也可以让 AI 做。
-- **已有记忆不同，脚本会先停止。** 让 AI 比较合并后再接入；脚本会备份接入前的本机记忆。Git 冲突同样先保留双方内容再处理。
-- **Windows 上记忆是硬链接。** 原生 Windows 不能随便建符号链接，接入脚本自动改用 NTFS 硬链接；仓库和 `%LOCALAPPDATA%\hermes` 不在同一个盘时会失败，把两者放到同一个分区再试
-- **桌面版要完全退出。** 关窗口不算退出，从托盘退出再打开，新会话才读得到同步后的记忆
-- **模型配置、API 密钥和聊天记录不在这个仓库里。** 每台设备单独配置授权；软件、服务和 wiki 仓库也要另外准备。
-- **这些命令针对默认 profile。** 其他 profile 或不同克隆路径，让 AI 按实际位置调整。共享记忆里的系统和路径也要注明属于哪台设备。
-- **不要直接删除本地仓库。** 长期记忆链接到里面的文件；需要搬家或取消接入时，让 AI 先处理链接并保留记忆。
