@@ -1,6 +1,6 @@
 # Calibre-Web
 
-基于 Calibre 的电子书管理 Web 界面，支持在线阅读、格式转换、OPDS。
+基于 Calibre 的电子书管理 Web 界面，支持在线阅读、格式转换、OPDS
 
 https://github.com/janeczku/calibre-web
 
@@ -41,7 +41,7 @@ admin / admin123
 2. 启用上传功能（管理员 → 配置 → 允许上传）
 3. 启用匿名用户访问
 
-> `books` 目录需要有一个 `metadata.db`（Calibre 数据库）。若目录为空，首次启动时 Calibre-Web 会自动创建空库，也可以用 Calibre 桌面版生成后放入。
+> `books` 目录需要有一个 `metadata.db`（Calibre 数据库）。若目录为空，首次启动时 Calibre-Web 会自动创建空库，也可以用 Calibre 桌面版生成后放入
 
 ## Nginx 反向代理
 
@@ -69,5 +69,5 @@ server {
 }
 ```
 
-> 配置反代后，需要在 Calibre-Web 管理后台把「基础配置」里的域名/端口改成反代的地址，否则 Cookie 和上传会有问题。
+> 配置反代后，需要在 Calibre-Web 管理后台把「基础配置」里的域名/端口改成反代的地址，否则 Cookie 和上传会有问题
 

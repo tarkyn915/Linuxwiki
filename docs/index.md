@@ -17,9 +17,14 @@ features:
     link: /installation/
     linkText: 进入章节
   - icon: ⚙️
-    title: 系统配置
+    title: Linux配置
     details: 主机名、用户、SSH、DNS、swap、BBR
     link: /system-config/
+    linkText: 进入章节
+  - icon: 🪟
+    title: Windows配置
+    details: 系统优化、性能选项、经典右键菜单、资源监控
+    link: /windows/
     linkText: 进入章节
   - icon: 🚀
     title: 应用部署
@@ -30,11 +35,6 @@ features:
     title: AI
     details: Hermes 技能同步、Herdr 终端管理、OpenCode 与 magpie
     link: /ai/
-    linkText: 进入章节
-  - icon: 🪟
-    title: Windows
-    details: 激活、跳过联网安装、本地账户、系统优化
-    link: /windows/
     linkText: 进入章节
   - icon: 🧩
     title: 其他

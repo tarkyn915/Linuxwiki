@@ -17,7 +17,7 @@ sudo systemctl start docker
 sudo systemctl enable docker
 ```
 
-> 目前 Docker 已集成 Compose，无需额外安装。
+> 目前 Docker 已集成 Compose，无需额外安装
 
 ## 镜像加速
 

@@ -14,4 +14,4 @@ iptables -I INPUT -p icmp --icmp-type 8 -j DROP
 net.ipv4.icmp_echo_ignore_all = 1
 ```
 
-改完执行 `sysctl -p` 生效。
+改完执行 `sysctl -p` 生效

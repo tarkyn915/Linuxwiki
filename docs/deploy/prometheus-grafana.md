@@ -1,6 +1,6 @@
 # Prometheus + Grafana
 
-Prometheus 采集指标，Grafana 可视化展示，配合 Node Exporter 监控主机。
+Prometheus 采集指标，Grafana 可视化展示，配合 Node Exporter 监控主机
 
 ## 创建目录与 prometheus.yml
 
@@ -87,7 +87,7 @@ scrape_configs:
 
 ## docker-compose.yml
 
-> 避坑：Grafana 镜像用标准名 `grafana/grafana:latest`，避免部分国内镜像源因未同步 `grafana/grafana-oss:latest` 而报 not found。
+> 避坑：Grafana 镜像用标准名 `grafana/grafana:latest`，避免部分国内镜像源因未同步 `grafana/grafana-oss:latest` 而报 not found
 
 ```yaml
 services:
@@ -152,9 +152,9 @@ docker compose up -d
 
 ## 验证与 Grafana 配置
 
-**验证 Prometheus 抓取状态**：访问 `http://服务器IP:9090/targets`，确认 node-exporter、prometheus（以及 netdata）的 State 均为绿色 `UP`。
+**验证 Prometheus 抓取状态**：访问 `http://服务器IP:9090/targets`，确认 node-exporter、prometheus（以及 netdata）的 State 均为绿色 `UP`
 
-**配置 Grafana 数据源**：访问 `http://服务器IP:3000`（默认账号密码 `admin` / `admin`）。
+**配置 Grafana 数据源**：访问 `http://服务器IP:3000`（默认账号密码 `admin` / `admin`）
 
 1. 左侧菜单进入 Connections -> Data sources -> Add new data source，选择 Prometheus
 2. Prometheus server URL 填入 `http://127.0.0.1:9090`
@@ -168,7 +168,7 @@ docker compose up -d
 | `--storage.tsdb.retention.time` | 样本保留时长（单位 y/w/d/h/m/s/ms） | `15d` |
 | `--storage.tsdb.retention.size` | 保留的最大字节数（单位 B/KB/MB/GB/TB/PB/EB） | `0`（禁用） |
 
-建议把 `retention.size` 设为分配给 Prometheus 磁盘空间的 80-85%，防止数据把硬盘撑爆。
+建议把 `retention.size` 设为分配给 Prometheus 磁盘空间的 80-85%，防止数据把硬盘撑爆
 
 ## Grafana 模板
 
@@ -182,7 +182,7 @@ docker compose up -d
 
 ## 二进制安装（可选）
 
-不想套 Docker 时，可从下载页获取预编译二进制，用 systemd 管理。exporter 同理。
+不想套 Docker 时，可从下载页获取预编译二进制，用 systemd 管理。exporter 同理
 
 https://prometheus.io/download/
 

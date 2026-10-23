@@ -57,4 +57,4 @@ sudo sysctl --system
 lsmod | grep bbr
 ```
 
-能看到 `tcp_bbr` 说明已经生效。
+能看到 `tcp_bbr` 说明已经生效

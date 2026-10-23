@@ -1,10 +1,10 @@
 # Fast Note Sync
 
-高性能笔记同步服务，配合 Obsidian 插件实现多设备笔记实时同步。
+高性能笔记同步服务，配合 Obsidian 插件实现多设备笔记实时同步
 
 服务端：https://github.com/haierkeys/fast-note-sync-service
 
-客户端：Obsidian 社区插件市场搜索 `Fast Note Sync` 安装即可。
+客户端：Obsidian 社区插件市场搜索 `Fast Note Sync` 安装即可
 
 ## 部署
 
@@ -35,7 +35,7 @@ services:
       - ./config:/fast-note-sync/config
 ```
 
-访问 `http://<服务器IP>:9000`，首次访问注册账号，然后在后台「Copy API Config」复制配置到 Obsidian 插件里。
+访问 `http://<服务器IP>:9000`，首次访问注册账号，然后在后台「Copy API Config」复制配置到 Obsidian 插件里
 
 ## Nginx 反向代理
 
@@ -69,4 +69,4 @@ server {
 }
 ```
 
-> `/api/user/sync` 是 WebSocket 接口，必须单独配 `Upgrade` / `Connection`，否则笔记无法实时同步。
+> `/api/user/sync` 是 WebSocket 接口，必须单独配 `Upgrade` / `Connection`，否则笔记无法实时同步

@@ -1,6 +1,6 @@
 # OpenList
 
-网盘聚合程序，是 AList 的开源分支（AList 被收购后由原贡献者发起），去掉商业化限制、重构 API，兼容夸克/百度/天翼等主流网盘。
+网盘聚合程序，是 AList 的开源分支（AList 被收购后由原贡献者发起），去掉商业化限制、重构 API，兼容夸克/百度/天翼等主流网盘
 
 https://github.com/OpenListTeam/OpenList
 
@@ -11,7 +11,7 @@ curl -fsSL https://res.oplist.org/script/v4.sh > install-openlist-v4.sh
 sudo bash install-openlist-v4.sh
 ```
 
-按提示完成安装，安装完成后会输出访问地址、账号和初始密码。
+按提示完成安装，安装完成后会输出访问地址、账号和初始密码
 
 常用管理命令：
 
@@ -41,7 +41,7 @@ docker compose up -d
 docker logs openlist 2>&1 | grep -i password
 ```
 
-默认账号 `admin`，密码从日志里获取（搜 `Password is:` 或 `password`）。
+默认账号 `admin`，密码从日志里获取（搜 `Password is:` 或 `password`）
 
 ## Nginx 反向代理
 
@@ -72,4 +72,4 @@ server {
 }
 ```
 
-`Range` / `If-Range` 两个头是关键，网盘的断点续传、视频拖动、大文件流式传输都依赖它们，不能省。
+`Range` / `If-Range` 两个头是关键，网盘的断点续传、视频拖动、大文件流式传输都依赖它们，不能省

@@ -1,6 +1,6 @@
 # FRP 内网穿透
 
-将内网服务暴露到公网，客户端 frpc 主动连到服务端 frps。
+将内网服务暴露到公网，客户端 frpc 主动连到服务端 frps
 
 https://github.com/fatedier/frp
 
@@ -14,7 +14,7 @@ wget https://github.com/fatedier/frp/releases/download/v0.61.1/frp_0.61.1_linux_
 tar -zxvf frp_0.61.1_linux_amd64.tar.gz
 ```
 
-解压后目录里有 `frps`（服务端）和 `frpc`（客户端）两个可执行文件，对应两份配置。
+解压后目录里有 `frps`（服务端）和 `frpc`（客户端）两个可执行文件，对应两份配置
 
 ## 服务端 frps
 

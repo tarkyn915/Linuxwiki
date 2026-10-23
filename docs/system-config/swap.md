@@ -1,6 +1,6 @@
 # swap 交换内存
 
-swap 有两种主要形式：**swap 文件** 和 **swap 分区**。
+swap 有两种主要形式：**swap 文件** 和 **swap 分区**
 
 查看当前已启用的 swap：
 
@@ -49,7 +49,7 @@ swapon /swapfile
 
 ## 配置 swappiness
 
-swappiness 数字越大，越积极的把较少使用的匿名内存交换到 swap。
+swappiness 数字越大，越积极的把较少使用的匿名内存交换到 swap
 
 查看当前值（默认一般是 60）：
 
@@ -57,7 +57,7 @@ swappiness 数字越大，越积极的把较少使用的匿名内存交换到 sw
 cat /proc/sys/vm/swappiness
 ```
 
-服务器低延迟或 PC 桌面建议调低，尽可能使用物理内存，一般默认即可。
+服务器低延迟或 PC 桌面建议调低，尽可能使用物理内存，一般默认即可
 
 ### 临时设置
 

@@ -1,6 +1,6 @@
 # NFS 共享
 
-NFS（Network File System）网络文件系统，让服务器之间通过网络共享目录。
+NFS（Network File System）网络文件系统，让服务器之间通过网络共享目录
 
 ## 服务端
 

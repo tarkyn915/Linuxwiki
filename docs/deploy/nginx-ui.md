@@ -1,6 +1,6 @@
 # Nginx UI
 
-Nginx 的图形化管理面板，基于 Web，可直接管理 Nginx 配置。
+Nginx 的图形化管理面板，基于 Web，可直接管理 Nginx 配置
 
 https://github.com/0xJacky/nginx-ui
 
@@ -12,7 +12,7 @@ https://github.com/0xJacky/nginx-ui
 bash -c "$(curl -L https://cloud.nginxui.com/install.sh)" @ install
 ```
 
-安装为 systemd 服务，默认监听端口 `9000`，HTTP Challenge 端口 `9180`。端口冲突时改 `/usr/local/etc/nginx-ui/app.ini`，再 `systemctl restart nginx-ui`。
+安装为 systemd 服务，默认监听端口 `9000`，HTTP Challenge 端口 `9180`。端口冲突时改 `/usr/local/etc/nginx-ui/app.ini`，再 `systemctl restart nginx-ui`
 
 ### Docker
 
@@ -50,11 +50,11 @@ services:
     image: 'uozi/nginx-ui:latest'
 ```
 
-首次访问 `http://<服务器IP>:8080/install` 完成初始化。
+首次访问 `http://<服务器IP>:8080/install` 完成初始化
 
 ## 注意
 
-- Nginx UI 遵循 Debian 的站点组织规范：站点配置放 `sites-available/`，启用的站点软链接到 `sites-enabled/`。
+- Nginx UI 遵循 Debian 的站点组织规范：站点配置放 `sites-available/`，启用的站点软链接到 `sites-enabled/`
 - 非 Debian / Ubuntu 系统需要在 `nginx.conf` 里手动加上：
 
 ```nginx

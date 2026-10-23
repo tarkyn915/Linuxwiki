@@ -1,6 +1,6 @@
 # Netdata
 
-实时服务器监控，自带 Web 仪表盘，CPU/内存/网络/磁盘等指标开箱即用，支持 Prometheus 导出。
+实时服务器监控，自带 Web 仪表盘，CPU/内存/网络/磁盘等指标开箱即用，支持 Prometheus 导出
 
 https://github.com/netdata/netdata
 
@@ -30,7 +30,7 @@ mkdir -p ~/monitor/netdata && cd ~/monitor/netdata
     bind to = *
 ```
 
-> 三层存储磁盘占用从默认的 3×1024MB 缩减到 256+128+64MB，避免吃满 VPS 磁盘。
+> 三层存储磁盘占用从默认的 3×1024MB 缩减到 256+128+64MB，避免吃满 VPS 磁盘
 
 ## docker-compose.yml
 
@@ -79,7 +79,7 @@ docker compose up -d
 docker compose ps   # 确认状态 Up / healthy
 ```
 
-访问 `http://服务器IP:19999`，在欢迎页左侧表格的 `Disk -> Configured` 列能看到三个 `1 GB` 已变成 `256 MB`、`128 MB`、`64 MB`。
+访问 `http://服务器IP:19999`，在欢迎页左侧表格的 `Disk -> Configured` 列能看到三个 `1 GB` 已变成 `256 MB`、`128 MB`、`64 MB`
 
 ## Prometheus 导出
 
@@ -87,4 +87,4 @@ docker compose ps   # 确认状态 Up / healthy
 curl -s "http://127.0.0.1:19999/api/v1/allmetrics?format=prometheus" | head -n 20
 ```
 
-输出以 `# COMMENT` 和 `netdata_` 开头的指标文本，即可被 Prometheus 抓取。
+输出以 `# COMMENT` 和 `netdata_` 开头的指标文本，即可被 Prometheus 抓取

@@ -1,6 +1,6 @@
 # TeamSpeak
 
-自托管语音服务器，支持多人语音聊天。
+自托管语音服务器，支持多人语音聊天
 
 https://teamspeak.com/en/
 
@@ -48,7 +48,7 @@ services:
 
 ## 音乐机器人
 
-TS 音乐播放机器人，支持网易云、QQ 音乐、酷狗、B 站等音源。
+TS 音乐播放机器人，支持网易云、QQ 音乐、酷狗、B 站等音源
 
 https://github.com/ZHANGTIANYAO1/teamspeak-music-bot
 
@@ -64,7 +64,7 @@ docker compose pull
 docker compose up -d
 ```
 
-访问 `http://<服务器IP>:3000` 即可。
+访问 `http://<服务器IP>:3000` 即可
 
 ### 脚本安装
 

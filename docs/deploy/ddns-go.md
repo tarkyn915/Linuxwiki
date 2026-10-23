@@ -1,6 +1,6 @@
 # ddns-go 动态域名
 
-自动获取公网 IP，解析到域名，支持阿里云、腾讯云、Dnspod、Cloudflare 等多家服务商。
+自动获取公网 IP，解析到域名，支持阿里云、腾讯云、Dnspod、Cloudflare 等多家服务商
 
 https://github.com/jeessy2/ddns-go
 
@@ -22,7 +22,7 @@ https://github.com/jeessy2/ddns-go
 sudo ./ddns-go -s install
 ```
 
-安装后访问 `http://<服务器IP>:9876` 进行初始化配置。
+安装后访问 `http://<服务器IP>:9876` 进行初始化配置
 
 卸载：
 
@@ -58,7 +58,7 @@ docker run -d \
   jeessy/ddns-go
 ```
 
-访问 `http://<Docker主机IP>:9876` 初始化配置。
+访问 `http://<Docker主机IP>:9876` 初始化配置
 
 不使用 host 模式（端口映射）：
 

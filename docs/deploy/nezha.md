@@ -1,6 +1,6 @@
 # 哪吒监控
 
-开源自托管服务器监控与运维平台，一个 Dashboard 管理多台 Agent。
+开源自托管服务器监控与运维平台，一个 Dashboard 管理多台 Agent
 
 https://nezha.wiki/
 
@@ -22,7 +22,7 @@ chmod +x nezha.sh
 sudo CN=true ./nezha.sh
 ```
 
-安装过程按提示输入站点标题、暴露端口（默认 `8008`）、后台语言。
+安装过程按提示输入站点标题、暴露端口（默认 `8008`）、后台语言
 
 ## 访问
 
@@ -32,7 +32,7 @@ sudo CN=true ./nezha.sh
 http://<服务器IP>:8008/dashboard
 ```
 
-默认用户名密码均为 `admin`，**安装后立即修改**。
+默认用户名密码均为 `admin`，**安装后立即修改**
 
 ## Nginx 反向代理
 
@@ -58,5 +58,5 @@ server {
 }
 ```
 
-> Agent 与 Dashboard 的通信走长连接，反代时需保证 WebSocket 正常，否则 Agent 会掉线。
+> Agent 与 Dashboard 的通信走长连接，反代时需保证 WebSocket 正常，否则 Agent 会掉线
 

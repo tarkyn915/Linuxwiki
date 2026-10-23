@@ -1,6 +1,6 @@
 # Nginx Proxy Manager
 
-基于 Web 的 Nginx 反向代理管理面板，自带 Let's Encrypt 证书申请。
+基于 Web 的 Nginx 反向代理管理面板，自带 Let's Encrypt 证书申请
 
 https://github.com/NginxProxyManager/nginx-proxy-manager
 
@@ -37,4 +37,4 @@ docker compose up -d
 密码    changeme
 ```
 
-首次登录后会要求修改。
+首次登录后会要求修改

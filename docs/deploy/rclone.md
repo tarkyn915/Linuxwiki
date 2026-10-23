@@ -1,6 +1,6 @@
 # Rclone
 
-云盘同步 / 挂载工具，把 WebDAV、网盘等挂载成本地目录。
+云盘同步 / 挂载工具，把 WebDAV、网盘等挂载成本地目录
 
 https://rclone.org/
 

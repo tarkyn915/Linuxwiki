@@ -1,6 +1,6 @@
 # Memos
 
-轻量自托管的碎片笔记 / 微博客服务，支持 Markdown、标签、待办、代码块和多用户。
+轻量自托管的碎片笔记 / 微博客服务，支持 Markdown、标签、待办、代码块和多用户
 
 https://github.com/usememos/memos
 
@@ -32,7 +32,7 @@ docker compose up -d
 docker compose logs -f
 ```
 
-数据全部在 `./data` 下：`memos_prod.db`（SQLite）和 `assets/`（上传的图片附件）。
+数据全部在 `./data` 下：`memos_prod.db`（SQLite）和 `assets/`（上传的图片附件）
 
 ## Nginx 反向代理
 
@@ -64,7 +64,7 @@ server {
 }
 ```
 
-`nginx -t && nginx -s reload`，然后访问 `https://memos.example.com`。
+`nginx -t && nginx -s reload`，然后访问 `https://memos.example.com`
 
 ## 升级与备份
 

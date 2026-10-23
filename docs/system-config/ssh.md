@@ -16,7 +16,7 @@ chmod 700 ~/.ssh
 chmod 600 ~/.ssh/authorized_keys
 ```
 
-> 密钥权限必须是 `~/.ssh` 为 700、`authorized_keys` 为 600，否则 SSH 会因权限过宽而拒绝使用。
+> 密钥权限必须是 `~/.ssh` 为 700、`authorized_keys` 为 600，否则 SSH 会因权限过宽而拒绝使用
 
 ## 修改 SSH 配置
 
@@ -32,7 +32,7 @@ RSAAuthentication yes        # 启用 RSA 认证，默认为 yes
 PubkeyAuthentication yes     # 启用公钥认证，默认为 yes
 ```
 
-> `PasswordAuthentication no` 会关闭密码登录，改之前务必确认密钥已经配好、能正常登录，否则可能把自己锁在门外。
+> `PasswordAuthentication no` 会关闭密码登录，改之前务必确认密钥已经配好、能正常登录，否则可能把自己锁在门外
 
 改完重启 SSH 服务生效：
 

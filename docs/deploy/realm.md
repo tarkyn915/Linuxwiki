@@ -1,6 +1,6 @@
 # Realm 端口转发
 
-高性能的 TCP/UDP 端口转发工具，用 Rust 编写。
+高性能的 TCP/UDP 端口转发工具，用 Rust 编写
 
 https://github.com/zhboner/realm
 
@@ -51,7 +51,7 @@ ExecStart=/root/realm -c /root/config.toml
 WantedBy=multi-user.target
 ```
 
-> 记得把 `WorkingDirectory` 和 `ExecStart` 的路径改成 realm 文件实际所在目录。
+> 记得把 `WorkingDirectory` 和 `ExecStart` 的路径改成 realm 文件实际所在目录
 
 ## 启动服务
 

@@ -1,6 +1,6 @@
 # SmokePing
 
-网络延迟监控，用图表展示各节点丢包率和延迟，支持 FPing 等探针。
+网络延迟监控，用图表展示各节点丢包率和延迟，支持 FPing 等探针
 
 镜像：https://hub.docker.com/r/linuxserver/smokeping
 
@@ -23,9 +23,9 @@ services:
     restart: unless-stopped
 ```
 
-访问 `http://<服务器IP>:9090`。
+访问 `http://<服务器IP>:9090`
 
-监控目标配置写入 `/config/Targets`（容器内），改完重启容器生效。
+监控目标配置写入 `/config/Targets`（容器内），改完重启容器生效
 
 ## 三网监控模板
 

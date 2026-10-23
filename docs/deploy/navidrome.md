@@ -1,6 +1,6 @@
 # Navidrome
 
-自托管音乐流媒体服务器，兼容 Subsonic API。
+自托管音乐流媒体服务器，兼容 Subsonic API
 
 https://www.navidrome.org/
 
@@ -32,15 +32,15 @@ services:
       - "/opt/navidrome/music:/music:ro"
 ```
 
-访问 `http://<服务器IP>:4533`，首次会要求创建管理员账号。
+访问 `http://<服务器IP>:4533`，首次会要求创建管理员账号
 
 ## 外部集成
 
-Navidrome 通过 agents 获取艺术家简介、图片、相似艺人等元数据，默认顺序 `deezer,lastfm,listenbrainz`，某个失败自动降级到下一个。
+Navidrome 通过 agents 获取艺术家简介、图片、相似艺人等元数据，默认顺序 `deezer,lastfm,listenbrainz`，某个失败自动降级到下一个
 
 ### Deezer
 
-公共 API 免密钥，**默认已启用，无需任何配置**。
+公共 API 免密钥，**默认已启用，无需任何配置**
 
 ### Last.fm
 
@@ -56,7 +56,7 @@ environment:
   ND_LASTFM_LANGUAGE: zh
 ```
 
-> 旧版用 `ND_SPOTIFY_ID` / `ND_SPOTIFY_SECRET` 做 Spotify 集成，**自 0.61.0 起已移除**，不再支持。
+> 旧版用 `ND_SPOTIFY_ID` / `ND_SPOTIFY_SECRET` 做 Spotify 集成，**自 0.61.0 起已移除**，不再支持
 
 ## Nginx 反向代理
 
@@ -81,6 +81,6 @@ server {
 }
 ```
 
-> 如果反代到子路径（如 `/music`），需要同时设置环境变量 `ND_BASEURL=/music`，否则静态资源会加载失败。
+> 如果反代到子路径（如 `/music`），需要同时设置环境变量 `ND_BASEURL=/music`，否则静态资源会加载失败
 
 

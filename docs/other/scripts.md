@@ -1,6 +1,6 @@
 # 常用脚本
 
-> 一键脚本集合，按用途分类。跑之前先大致看一眼脚本来源，尤其是 DD 系统和 Warp 这类会改动系统的东西。
+> 一键脚本集合，按用途分类。跑之前先大致看一眼脚本来源，尤其是 DD 系统和 Warp 这类会改动系统的东西
 
 ## 性能测试
 
@@ -46,7 +46,7 @@ wget -N https://gitlab.com/fscarmen/warp/-/raw/main/menu.sh && bash menu.sh [opt
 
 ## DD 系统
 
-> 重装系统的脚本，会清空整台机器，别在生产环境上随手跑。
+> 重装系统的脚本，会清空整台机器，别在生产环境上随手跑
 
 ### Tools
 
@@ -64,4 +64,4 @@ https://github.com/bin456789/reinstall
 bash reinstall.sh debian 13
 ```
 
-常用参数：`--password` 设密码、`--ssh-port` 改端口、`--username` 设用户名。
+常用参数：`--password` 设密码、`--ssh-port` 改端口、`--username` 设用户名

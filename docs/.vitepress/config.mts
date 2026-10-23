@@ -21,10 +21,10 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: '安装指南', link: '/installation/' },
-      { text: '系统配置', link: '/system-config/' },
+      { text: 'Linux配置', link: '/system-config/' },
+      { text: 'Windows配置', link: '/windows/' },
       { text: '应用部署', link: '/deploy/' },
       { text: 'AI', link: '/ai/' },
-      { text: 'Windows', link: '/windows/' },
       { text: '其他', link: '/other/' },
     ],
 
@@ -35,10 +35,12 @@ export default defineConfig({
         items: [
           { text: '章节概览', link: '/installation/' },
           { text: 'iStoreOS', link: '/installation/istoreos' },
+          { text: 'Windows', link: '/installation/windows' },
+          { text: 'Ventoy', link: '/installation/ventoy' },
         ],
       },
       {
-        text: '系统配置',
+        text: 'Linux配置',
         collapsed: true,
         items: [
           { text: '章节概览', link: '/system-config/' },
@@ -52,6 +54,14 @@ export default defineConfig({
           { text: 'BBR 拥塞控制', link: '/system-config/bbr' },
           { text: 'NFS 共享', link: '/system-config/nfs' },
           { text: '终端与 Shell', link: '/system-config/terminal' },
+        ],
+      },
+      {
+        text: 'Windows配置',
+        collapsed: true,
+        items: [
+          { text: '章节概览', link: '/windows/' },
+          { text: '系统优化', link: '/windows/optimize' },
         ],
       },
       {
@@ -96,16 +106,6 @@ export default defineConfig({
           { text: 'Herdr AI 多终端管理', link: '/ai/herdr' },
           { text: 'OpenCode AI 编程助手', link: '/ai/opencode' },
           { text: 'magpie 模型网关', link: '/ai/magpie' },
-        ],
-      },
-      {
-        text: 'Windows',
-        collapsed: true,
-        items: [
-          { text: '章节概览', link: '/windows/' },
-          { text: '激活', link: '/windows/activation' },
-          { text: '安装与本地账户', link: '/windows/install' },
-          { text: '系统优化', link: '/windows/optimize' },
         ],
       },
       {

@@ -1,6 +1,6 @@
 # Uptime Kuma
 
-自托管的服务监控工具，支持 HTTP/TCP/DNS 等多种探活方式。
+自托管的服务监控工具，支持 HTTP/TCP/DNS 等多种探活方式
 
 https://github.com/louislam/uptime-kuma
 
@@ -18,11 +18,11 @@ services:
       - ./data:/app/data
 ```
 
-> 简单方便，但无法隔离。
+> 简单方便，但无法隔离
 
 ## 配置 v6 模式
 
-如果不用 host 模式，也可以给 Docker 配置 IPv6 让容器拿到 v6 地址。
+如果不用 host 模式，也可以给 Docker 配置 IPv6 让容器拿到 v6 地址
 
 在 `/etc/docker/daemon.json` 配置 v6：
 
@@ -59,4 +59,4 @@ networks:
 
 ## 访问
 
-默认端口 `3001`，访问 `http://<服务器IP>:3001`，首次登录创建管理员账号。
+默认端口 `3001`，访问 `http://<服务器IP>:3001`，首次登录创建管理员账号

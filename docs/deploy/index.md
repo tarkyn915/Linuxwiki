@@ -1,6 +1,6 @@
 # 应用部署
 
-常用自托管应用的部署记录，以 Docker / Docker Compose 为主。
+常用自托管应用的部署记录，以 Docker / Docker Compose 为主
 
 ---
 

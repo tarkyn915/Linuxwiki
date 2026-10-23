@@ -17,7 +17,7 @@ Linux 用户相关的信息分散在几个文件里：
 useradd -m -s /usr/bin/bash xnamex
 ```
 
-`-m` 自动创建家目录，`-s` 指定登录 shell。
+`-m` 自动创建家目录，`-s` 指定登录 shell
 
 删除用户（`-r` 连同家目录一起删）：
 
@@ -74,11 +74,11 @@ groupdel groupname
 usermod -aG group1,group2 username
 ```
 
-> `-a` 表示追加（append），`-G` 指定附加组。不加 `-a` 会覆盖用户原来的附加组，务必带上 `-a`。
+> `-a` 表示追加（append），`-G` 指定附加组。不加 `-a` 会覆盖用户原来的附加组，务必带上 `-a`
 
 ## sudo 权限
 
-配置文件在 `/etc/sudoers`（用 `visudo` 编辑，会检查语法）。
+配置文件在 `/etc/sudoers`（用 `visudo` 编辑，会检查语法）
 
 方式一：把用户加到 sudo 组（推荐，方便维护）：
 

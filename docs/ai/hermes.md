@@ -34,7 +34,7 @@ curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash
 hermes setup
 ```
 
-按提示配置这台设备的模型和授权，确认运行 `hermes` 后可以正常对话。
+按提示配置这台设备的模型和授权，确认运行 `hermes` 后可以正常对话
 
 ## 2. 配置好自定义的 API
 
@@ -57,4 +57,4 @@ gh auth login                # 浏览器登录一次
 
 **然后打开 Hermes，直接把下面这句发给 AI：**
 
-> 帮我接入私有仓库 tarkyn915/hermes-skills，完成技能和记忆的接入，不同记忆合并并保留重要内容，然后自己检查。
+> 帮我接入私有仓库 tarkyn915/hermes-skills，完成技能和记忆的接入，不同记忆合并并保留重要内容，然后自己检查

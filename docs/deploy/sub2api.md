@@ -1,6 +1,6 @@
 # Sub2api
 
-把 ChatGPT Plus / Claude Pro / Gemini 等网页订阅转换成标准 API，支持账号池调度、限流、计费。
+把 ChatGPT Plus / Claude Pro / Gemini 等网页订阅转换成标准 API，支持账号池调度、限流、计费
 
 https://github.com/Wei-Shaw/sub2api
 
@@ -19,7 +19,7 @@ docker compose up -d
 docker compose logs -f sub2api
 ```
 
-脚本会自动生成 `.env`（JWT 密钥、数据库密码等）并创建数据持久化目录。
+脚本会自动生成 `.env`（JWT 密钥、数据库密码等）并创建数据持久化目录
 
 ## 限制内网访问
 
@@ -32,7 +32,7 @@ ports:
 
 ## 访问
 
-访问 `http://<服务器IP>:8080`。
+访问 `http://<服务器IP>:8080`
 
 初始管理员账号密码在日志里：
 

@@ -1,6 +1,6 @@
 # ArchiSteamFarm (ASF)
 
-Steam 挂机工具，自动挂卡、领取掉落物、玩游戏时间。
+Steam 挂机工具，自动挂卡、领取掉落物、玩游戏时间
 
 https://github.com/JustArchiNET/ArchiSteamFarm
 
@@ -26,7 +26,7 @@ root    ALL=(ALL:ALL) ALL
 asf     ALL=(ALL:ALL) NOPASSWD:ALL
 ```
 
-> 之后的操作用 `su asf` 切到 asf 用户下完成，这样文件权限都会落在 asf 名下，后面配置守护进程不会出权限问题。
+> 之后的操作用 `su asf` 切到 asf 用户下完成，这样文件权限都会落在 asf 名下，后面配置守护进程不会出权限问题
 
 ## 下载安装
 
@@ -51,7 +51,7 @@ unzip ASF-linux-x64.zip
 }
 ```
 
-机器人配置文件自己取好名字，例如 `xxx1.json`，放进 `config` 文件夹。
+机器人配置文件自己取好名字，例如 `xxx1.json`，放进 `config` 文件夹
 
 ## 测试运行
 
@@ -63,7 +63,7 @@ unzip ASF-linux-x64.zip
 
 ## 守护进程
 
-> 需要先登录过一次再配置。
+> 需要先登录过一次再配置
 
 先确认目录是 asf 用户权限，不是的话执行：
 
