@@ -8,12 +8,12 @@ hero:
   actions:
     - theme: brand
       text: Start
-      link: /system-config/
+      link: /installation/
 
 features:
   - icon: ⬇️
     title: 安装指南
-    details: Debian、Ubuntu、Rocky、Arch 官网与版本
+    details: iStoreOS 软路由、PVE 安装与 Nikki 透明代理
     link: /installation/
     linkText: 进入章节
   - icon: ⚙️

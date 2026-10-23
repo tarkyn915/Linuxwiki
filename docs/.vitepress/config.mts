@@ -34,12 +34,7 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: '章节概览', link: '/installation/' },
-          { text: 'Debian', link: '/installation/debian' },
-          { text: 'Ubuntu', link: '/installation/ubuntu' },
-          { text: 'Rocky Linux', link: '/installation/rocky' },
-          { text: 'Fedora', link: '/installation/fedora' },
-          { text: 'Arch Linux', link: '/installation/arch' },
-          { text: 'CachyOS', link: '/installation/cachyos' },
+          { text: 'iStoreOS', link: '/installation/istoreos' },
         ],
       },
       {

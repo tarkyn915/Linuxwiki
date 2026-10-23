@@ -1,12 +1,7 @@
 # 安装指南
 
-各发行版的官网、当前版本和简要介绍。
+软路由与系统的安装记录
 
 ---
 
-- [Debian](debian.md) — Debian 13 "Trixie"
-- [Ubuntu](ubuntu.md) — Ubuntu 26.04 LTS
-- [Rocky Linux](rocky.md) — Rocky 10 "Red Quartz"
-- [Fedora](fedora.md) — Fedora 44
-- [Arch Linux](arch.md) — 滚动发布
-- [CachyOS](cachyos.md) — 滚动发布（Arch 衍生）
+- [iStoreOS](istoreos.md) — KoolCenter 的 OpenWrt 软路由系统（PVE 安装 + Nikki 透明代理）
