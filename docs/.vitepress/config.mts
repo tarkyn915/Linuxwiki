@@ -24,6 +24,7 @@ export default defineConfig({
       { text: 'Linux配置', link: '/system-config/' },
       { text: 'Windows配置', link: '/windows/' },
       { text: '应用部署', link: '/deploy/' },
+      { text: '软件安装', link: '/software/' },
       { text: 'AI', link: '/ai/' },
       { text: '其他', link: '/other/' },
     ],
@@ -36,7 +37,8 @@ export default defineConfig({
           { text: '章节概览', link: '/installation/' },
           { text: 'iStoreOS', link: '/installation/istoreos' },
           { text: 'Windows', link: '/installation/windows' },
-          { text: 'Ventoy', link: '/installation/ventoy' },
+          { text: 'Ventoy 启动U盘', link: '/installation/ventoy' },
+          { text: 'PVE', link: '/installation/pve' },
         ],
       },
       {
@@ -95,6 +97,16 @@ export default defineConfig({
           { text: 'Netdata', link: '/deploy/netdata' },
           { text: 'Prometheus + Grafana', link: '/deploy/prometheus-grafana' },
           { text: '夜莺 Nightingale', link: '/deploy/nightingale' },
+        ],
+      },
+      {
+        text: '软件安装',
+        collapsed: true,
+        items: [
+          { text: '章节概览', link: '/software/' },
+          { text: '浏览器', link: '/software/browser' },
+          { text: '解压软件', link: '/software/archive' },
+          { text: '鼠标驱动', link: '/software/mouse-driver' },
         ],
       },
       {

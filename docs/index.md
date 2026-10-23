@@ -31,6 +31,11 @@ features:
     details: Docker、Nginx、FRP、监控、云盘等自托管应用
     link: /deploy/
     linkText: 进入章节
+  - icon: 💻
+    title: 软件安装
+    details: 桌面软件安装记录
+    link: /software/
+    linkText: 进入章节
   - icon: 🤖
     title: AI
     details: Hermes 技能同步、Herdr 终端管理、OpenCode 与 magpie
