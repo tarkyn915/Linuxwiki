@@ -23,7 +23,7 @@ features:
     linkText: 进入章节
   - icon: 🪟
     title: Windows配置
-    details: 系统优化、性能选项、经典右键菜单、资源监控
+    details: 系统优化、AD 域搭建、经典右键菜单、资源监控
     link: /windows/
     linkText: 进入章节
   - icon: 🚀

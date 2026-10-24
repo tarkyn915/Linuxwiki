@@ -30,3 +30,4 @@
 - [Netdata](netdata.md) — 实时服务器监控
 - [Prometheus + Grafana](prometheus-grafana.md) — 指标采集与可视化
 - [夜莺 Nightingale](nightingale.md) — 监控告警中心
+- [Sunshine](sunshine.md) — Sunshine + Moonlight 串流

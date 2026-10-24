@@ -64,6 +64,7 @@ export default defineConfig({
         items: [
           { text: '章节概览', link: '/windows/' },
           { text: '系统优化', link: '/windows/optimize' },
+          { text: 'AD 域搭建', link: '/windows/ad-domain' },
         ],
       },
       {
@@ -97,6 +98,7 @@ export default defineConfig({
           { text: 'Netdata', link: '/deploy/netdata' },
           { text: 'Prometheus + Grafana', link: '/deploy/prometheus-grafana' },
           { text: '夜莺 Nightingale', link: '/deploy/nightingale' },
+          { text: 'Sunshine 游戏串流', link: '/deploy/sunshine' },
         ],
       },
       {
