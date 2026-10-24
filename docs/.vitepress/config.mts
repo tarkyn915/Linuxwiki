@@ -107,6 +107,7 @@ export default defineConfig({
           { text: '浏览器', link: '/software/browser' },
           { text: '解压软件', link: '/software/archive' },
           { text: '鼠标驱动', link: '/software/mouse-driver' },
+          { text: '终端软件', link: '/software/terminal' },
         ],
       },
       {
