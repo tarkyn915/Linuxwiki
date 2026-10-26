@@ -20,13 +20,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '首页', link: '/' },
-      { text: '安装指南', link: '/installation/' },
-      { text: 'Linux配置', link: '/system-config/' },
-      { text: 'Windows配置', link: '/windows/' },
-      { text: '应用部署', link: '/deploy/' },
-      { text: '软件安装', link: '/software/' },
-      { text: 'AI', link: '/ai/' },
-      { text: '其他', link: '/other/' },
+      { text: '我的养鸡场', link: 'https://vps.tjq.one/' },
     ],
 
     sidebar: [

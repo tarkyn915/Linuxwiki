@@ -4,7 +4,10 @@ layout: home
 hero:
   name: My Linux Wiki
   text: 
-  tagline: 
+  tagline: Interest is the best teacher
+  image:
+    src: /images/hero-terminal.svg
+    alt: 终端窗口
   actions:
     - theme: brand
       text: Start
