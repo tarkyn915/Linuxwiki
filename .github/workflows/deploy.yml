@@ -33,8 +33,6 @@ jobs:
 
       - name: Build site
         run: pnpm docs:build
-        env:
-          VOID_PASSWORD: ${{ secrets.VOID_PASSWORD }}
 
       - uses: actions/upload-artifact@v7
         with:

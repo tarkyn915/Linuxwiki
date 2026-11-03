@@ -49,4 +49,9 @@ features:
     details: 常用脚本、零碎小工具与命令
     link: /other/
     linkText: 进入章节
+  - icon: 🕳️
+    title: 神秘空洞
+    details: 需要密码进入的杂物间
+    link: /void/
+    linkText: 进入章节
 ---

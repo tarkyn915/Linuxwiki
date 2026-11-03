@@ -104,6 +104,7 @@ export default defineConfig({
           { text: '解压软件', link: '/software/archive' },
           { text: '鼠标驱动', link: '/software/mouse-driver' },
           { text: '终端软件', link: '/software/terminal' },
+          { text: '代理软件', link: '/software/proxy' },
         ],
       },
       {
@@ -130,7 +131,9 @@ export default defineConfig({
       {
         text: '神秘空洞',
         collapsed: true,
-        items: [{ text: '进入专栏', link: '/void/' }],
+        items: [
+          { text: '神秘目录', link: '/void/' },
+        ],
       },
     ],
 
