@@ -127,6 +127,11 @@ export default defineConfig({
           { text: '监控测试 IP', link: '/other/monitor-ip' },
         ],
       },
+      {
+        text: '神秘空洞',
+        collapsed: true,
+        items: [{ text: '进入专栏', link: '/void/' }],
+      },
     ],
 
     outline: { label: '本页目录' },
