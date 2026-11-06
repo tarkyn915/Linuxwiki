@@ -101,10 +101,16 @@ export default defineConfig({
         items: [
           { text: '章节概览', link: '/software/' },
           { text: '浏览器', link: '/software/browser' },
+          { text: '文本编辑器', link: '/software/text-editor' },
           { text: '解压软件', link: '/software/archive' },
           { text: '鼠标驱动', link: '/software/mouse-driver' },
           { text: '终端软件', link: '/software/terminal' },
           { text: '代理软件', link: '/software/proxy' },
+          { text: 'U盘工具', link: '/software/usb-tool' },
+          { text: '音频软件', link: '/software/audio' },
+          { text: '影音软件', link: '/software/media' },
+          { text: '视频编辑工具', link: '/software/video-edit' },
+          { text: 'Adobe', link: '/software/adobe' },
         ],
       },
       {
@@ -116,6 +122,10 @@ export default defineConfig({
           { text: 'Herdr AI 多终端管理', link: '/ai/herdr' },
           { text: 'OpenCode AI 编程助手', link: '/ai/opencode' },
           { text: 'magpie 模型网关', link: '/ai/magpie' },
+          { text: 'DeepSeek Harness', link: '/ai/deepseek-harness' },
+          { text: 'Todos Agent 协作工作台', link: '/ai/todos' },
+          { text: 'Dify 大模型应用开发平台', link: '/ai/dify' },
+          { text: 'Cindy 跨设备 AI Agent', link: '/ai/cindy' },
         ],
       },
       {
@@ -126,6 +136,8 @@ export default defineConfig({
           { text: '常用脚本', link: '/other/scripts' },
           { text: '终端查询天气预报', link: '/other/weather' },
           { text: '监控测试 IP', link: '/other/monitor-ip' },
+          { text: 'Server酱推送', link: '/other/serverchan' },
+          { text: 'Firefox 配置', link: '/other/firefox' },
         ],
       },
       {

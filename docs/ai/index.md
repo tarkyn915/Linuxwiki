@@ -8,3 +8,7 @@
 - [Herdr](herdr.md) — 多 AI 终端管理、安装与快捷键、Hermes 集成、远程机器与会话恢复
 - [OpenCode](opencode.md) — AI 编程助手、v2 安装、模型连接、自定义 API 与常用操作
 - [magpie](magpie.md) — 本地模型网关、桌面与终端安装、网页配置
+- [DeepSeek Harness](deepseek-harness.md)
+- [Todos](todos.md) — Agent 协作工作台
+- [Dify](dify.md) — 大模型应用开发平台、Docker 部署与模型配置
+- [Cindy](cindy.md) — 跨设备的开源 AI Agent
