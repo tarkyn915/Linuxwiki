@@ -24,6 +24,7 @@ export default defineConfig({
   },
 
   themeConfig: {
+    siteTitle: '淇淇的wiki',
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '首页', link: '/' },

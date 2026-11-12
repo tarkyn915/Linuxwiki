@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: My Linux Wiki
+  name: 淇淇的wiki
   text: 
   tagline: Interest is the best teacher
   image:
