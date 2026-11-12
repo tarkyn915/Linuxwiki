@@ -2,10 +2,17 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: 'my wiki',
-  description: '我的个人wiki',
+  title: '淇淇的wiki - 个人技术与实战知识库',
+  description: '淇淇的wiki是一个持续更新的个人知识库，分享 Linux 日常使用、服务器配置部署、建站教程与常见问题排错，记录实用操作笔记与高效解决方案。',
   lang: 'zh-CN',
   appearance: 'dark',
+
+  sitemap: {
+    hostname: 'https://wiki.tjq.one',
+    transformItems: (items) => items.filter(
+      (item) => !/^\/?(?:void(?:\/|\.html|$)|404(?:\.html)?$)/.test(item.url),
+    ),
+  },
 
   head: [
     ['link', { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
