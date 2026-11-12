@@ -119,6 +119,7 @@ export default defineConfig({
           { text: '影音软件', link: '/software/media' },
           { text: '视频编辑工具', link: '/software/video-edit' },
           { text: 'Adobe', link: '/software/adobe' },
+          { text: '聊天通讯', link: '/software/chat' },
         ],
       },
       {
