@@ -135,6 +135,7 @@ export default defineConfig({
           { text: 'Todos Agent 协作工作台', link: '/ai/todos' },
           { text: 'Dify 大模型应用开发平台', link: '/ai/dify' },
           { text: 'Cindy 跨设备 AI Agent', link: '/ai/cindy' },
+          { text: 'llama.cpp 本地模型推理', link: '/ai/llama-cpp' },
         ],
       },
       {

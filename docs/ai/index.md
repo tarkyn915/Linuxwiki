@@ -12,3 +12,4 @@
 - [Todos](todos.md) — Agent 协作工作台
 - [Dify](dify.md) — 大模型应用开发平台、Docker 部署与模型配置
 - [Cindy](cindy.md) — 跨设备的开源 AI Agent
+- [llama.cpp 模型部署](llama-cpp.md) — Windows / Linux Vulkan 部署与 systemd 用户服务
